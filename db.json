@@ -1,0 +1,42 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed Hard Drive on workstation 005",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Sam Smith"
+    },
+    {
+      "id": 2,
+      "message": "WorkSation 007 is not working",
+      "attention": true,
+      "date": "03-02-2019",
+      "tech": "John Skills"
+    },
+    {
+      "id": 3,
+      "message": "Memory Needs to reset on workstation 001",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Mike Hayden"
+    }
+  ],
+  "techs": [
+    {
+      "firstName": "Sam",
+      "lastName": "Smith",
+      "id": 1
+    },
+    {
+      "firstName": "John",
+      "lastName": "Skills",
+      "id": 2
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Hayden",
+      "id": 3
+    }
+  ]
+}
