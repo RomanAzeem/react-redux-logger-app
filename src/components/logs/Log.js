@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
+import LogItem from './LogItem';
 
 const Log = () => {
   const [logs, setLogs] = useState([]);
@@ -17,18 +18,20 @@ const Log = () => {
   };
   if (loading) {
     return <h4>Loading....</h4>;
-  } else {
-    return (
-      <Fragment>
-        {!loading && logs.length === 0 ? (
-          <p>No Logs to show...</p>
-        ) : (
-          logs.map((log) => {
-            return <p>{log.message}</p>;
-          })
-        )}
-      </Fragment>
-    );
   }
+  return (
+    <div className='container'>
+      <ul className='collection with-header'>
+        <li className='collection-header'>
+          <h4 className='center'>System Logs</h4>
+        </li>
+        {!loading && logs.length === 0 ? (
+          <p className='center'>No Logs to show...</p>
+        ) : (
+          logs.map((log) => <LogItem log={log} key={log.id} />)
+        )}
+      </ul>
+    </div>
+  );
 };
 export default Log;
