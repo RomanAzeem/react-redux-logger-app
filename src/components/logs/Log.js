@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Preloader from '../layout/Preloader';
 import LogItem from './LogItem';
 
